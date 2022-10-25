@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Montserrat", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Do not touch anything above this */
+
+body {
+  background-color: bisque;
+}
+
+.top {
+  padding: 100px;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.main {
+  border: 1px solid black;
+  padding: 50px 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-drop,
+.main-information {
+  width: 500px;
+}
+.main-drop-title,
+.main-information-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  height: 50px;
+}
+.main-drop-info > p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.main-drop-info > p > label {
+  display: inline-block;
+  width: 200px;
+}
+.main-drop-info-role > select {
+  width: 125px;
+}
+.main-drop-info-submit-span,
+.main-drop-info-email-validation,
+.main-drop-info-phoneNumber-validation {
+  display: none;
+  color: green;
+}
+
+.main-information-student-list,
+.main-information-course-list {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.main-information-student-list > h3,
+.main-information-course-list > h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+  .main {
+    padding: 50px 25px;
+  }
+}
+@media (max-width: 1020px) {
+  .top {
+    padding: 100px 25px;
+    font-size: 4rem;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-drop {
+    margin-bottom: 15px;
+  }
+
+  .main-drop-title,
+  .main-information-title {
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

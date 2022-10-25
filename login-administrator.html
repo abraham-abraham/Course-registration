@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="top">
+      <h1 class="top-title">Login administrator</h1>
+    </div>
+    <!-- Main -->
+    <div class="main">
+      <div class="main-register">
+        <!-- A student can add more than 1 class at a time -->
+        <h2 class="main-register-title">
+          Enter your first name, last name and employment ID
+        </h2>
+
+        <form class="main-register-info">
+          <p class="main-register-info-firstName">
+            <label>First Name</label>
+            <input
+              class="main-register-info-firstName-input"
+              name="firstName"
+              type="text"
+              value=""
+              size="16"
+              placeholder="Enter first name"
+            />
+          </p>
+          <p class="main-register-info-lastName">
+            <label>Last Name</label>
+            <input
+              class="main-register-info-lastName-input"
+              name="lastName"
+              type="text"
+              value=""
+              size="16"
+              placeholder="Enter last name"
+            />
+          </p>
+          <p class="main-register-info-ID">
+            <label>Employment ID</label>
+            <input
+              class="main-register-info-employmentID-input"
+              name="employmentID"
+              type="text"
+              value=""
+              size="16"
+              placeholder="Enter employment ID"
+            />
+          </p>
+          <button class="main-register-info-submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="main-information">
+        <h2 class="main-information-title">No account?</h2>
+        <div class="main-information-links">
+          <a href="./register.html"
+            ><h1 class="main-registerclasses-title">
+              Register here!
+            </h1></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="login-administrator.js"></script>
+  </body>
+</html>
