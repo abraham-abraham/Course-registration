@@ -10,7 +10,7 @@ $params = json_decode(file_get_contents('php://input'), TRUE);
 $studentID = $params["studentID"];
 
 // build SELECT query
-$query = "SELECT studentID FROM student WHERE studentID = $studentID";
+$query = "SELECT studentID FROM Student WHERE studentID = $studentID";
 
 if (!($result = mysqli_query($database, $query))) {
     echo (json($database->error, 'server-error'));

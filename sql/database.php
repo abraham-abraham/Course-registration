@@ -1,10 +1,6 @@
 <?php
-if (!($database = mysqli_connect("localhost", "root", ""))) {
+if (!($database =
+  mysqli_connect("containers-us-west-98.railway.app", "root", "vGvnEa3PoKIxzrIjNH6S", "railway", 7363))) {
   echo json('error connecting to sql db', 'server-error');
-  exit;
-}
-
-if (!mysqli_select_db($database, "Assignment1")) {
-  echo json($database->error, 'server-error');
   exit;
 }

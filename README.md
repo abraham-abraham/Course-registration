@@ -1,1 +1,2 @@
-# SOEN-387-assignment1
+# SOEN-387-Course registration
+
